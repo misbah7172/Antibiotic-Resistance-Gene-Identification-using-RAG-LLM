@@ -1,0 +1,46 @@
+1. mkdir arg_llm_project                                                                            
+cd arg_llm_project  
+
+2. python -m venv venv                                                                              
+source venv/bin/activate   # Linux/Mac
+venv\Scripts\activate      # Windows
+
+3. pip install torch transformers sentence-transformers faiss-cpu chromadb pandas numpy scikit-learn
+
+4. diamond makedb --in protein_fasta_protein_homolog_model.fasta -d card_db 
+
+5. diamond blastx -d card_db -q sample.fasta -o result.tsv
+
+6. create chunk
+
+7. You just built the memory of your AI system.
+
+What FAISS actually does
+
+It is a library for:
+
+Efficient nearest neighbor search in high-dimensional vector space
+
+Translation:
+
+Given a vector → find the most similar vectors.
+
+Where it’s used
+
+Chatbots (memory / RAG)
+
+Semantic search
+
+Recommendation systems
+
+Face recognition
+
+Document search
+
+Duplicate detection
+
+Basically: anything using embeddings.
+
+One-line definition
+
+FAISS is a library for fast similarity search over large collections of vectors (embeddings).

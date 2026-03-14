@@ -1,0 +1,74 @@
+1. Decide the LLM strategy (don’t ruin your life)
+
+You have 3 options:
+
+Option A (recommended)
+
+Use a pre-trained LLM via API
+Examples: GPT-4/5, Claude, Gemini
+
+Pros:
+
+Best reasoning quality
+
+No training cost
+
+Works immediately
+
+Cons:
+
+API cost
+
+Option B
+
+Use open-source LLM locallyWhat you need to build a fine-tuned LLM
+1. Base model (choose one)
+
+Examples:
+
+    LLaMA-2 / LLaMA-3
+
+    Mistral
+
+    Qwen
+
+    GPT-3.5 (API fine-tune)
+
+Best research choice:
+👉 Mistral 7B or LLaMA-3 8B
+
+Small enough to fine-tune. Smart enough to reason.
+Examples: LLaMA, Mistral, Qwen
+
+Pros:
+
+No API cost
+
+Full control
+
+Cons:
+
+GPU needed
+
+More setup
+
+Worse reasoning than top APIs
+
+Option C (don’t)
+
+Train from scratch
+
+Cons:
+
+Needs 10–100B tokens
+
+Huge GPUs
+
+Months of work
+
+Reviewers will laugh
+
+So: pick A or B.
+
+
+
